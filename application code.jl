@@ -60,7 +60,14 @@ while true
             println("Fantastic! What toppings would you like to have?")
             println("These are your options: ", Toppings)
             user_toppings = readline()
+            println("You would love to have $(user_toppings) on your IceCream.")
+        else
+            println("Fine.")
+            break
+        end
 
+    elseif user_input == "Takeaway"
+        
 
    
             
