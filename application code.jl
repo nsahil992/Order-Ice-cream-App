@@ -33,7 +33,7 @@ while true
         end
 
         println("What size do you want? (i.e Small/Medium/Large)")
-        user_size = readline
+        user_size = readline()
         user_size_index = findall(x -> x == "user_size", Size)
         if(length(user_size_index)) == 0
             println("Please select appropriate size. (i.e Small/Medium/Large)")
@@ -59,6 +59,24 @@ while true
         if user_action == "Yes"
             println("Fantastic! What toppings would you like to have?")
             println("These are your options: ", Toppings)
+            user_toppings = readline()
+            user_toppings_index = findall(x -> x == user_toppings, Toppings)
+        elseif(length(user_toppings_index)) == 0
+                println("Sorry, we don't have the toppings")
+                continue
+        elseif println("You want $(user_toppings) on your IceCream.")
+
+            else
+                println("Fine.")
+            end
+        end
+    end
+
+            
+
+
+
+
 
 
 
