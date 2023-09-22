@@ -63,11 +63,16 @@ while true
             println("You would love to have $(user_toppings) on your IceCream.")
         else
             println("Fine.")
-            break
         end
 
-    elseif user_input == "Takeaway"
-        
+        println("Your final order is as follows: ")
+        println("You ordered a: $(ice_cream) IceCream.")
+        println("Preferred size is: $(user_size).")
+        println("You want your IceCream in: $(user_medium).")
+        println("Toppings you want on your IceCream is: $(user_toppings).")
+        break
+    end
+end
 
    
             
