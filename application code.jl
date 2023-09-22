@@ -45,7 +45,7 @@ while true
 
         println("How would you like to have your IceCream in? (Valid options: Cup/Cone/Box)")
         user_medium = readline()
-        user_medium_index = findall(x -> x == "user_medium", medium)
+        user_medium_index = findall(x -> x == user_medium, medium)
         if(length(user_medium_index)) == 0
             println("Please select a valid option.")
             continue
