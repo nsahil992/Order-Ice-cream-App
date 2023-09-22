@@ -32,3 +32,34 @@ while true
             println("You want to buy $(ice_cream) ice_cream.")
         end
 
+        println("What size do you want? (i.e Small/Medium/Large)")
+        user_size = readline
+        user_size_index = findall(x -> x == "user_size", Size)
+        if(length(user_size_index)) == 0
+            println("Please select appropriate size. (i.e Small/Medium/Large)")
+            continue
+
+        else
+            println("You want $(user_size).!")
+        end
+
+        println("How would you like to have your IceCream in? (Valid options: Cup/Cone/Box)")
+        user_medium = readline()
+        user_medium_index = findall(x -> x == "user_medium", medium)
+        if(length(user_medium_index)) == 0
+            println("Please select a valid option.")
+            continue
+
+        else
+            println("You would like to have your IceCream in $(user_medium)")
+        end
+
+        println("Do you want any toppings on your IceCream? (Valid action: Yes/No)")
+        user_action = readline()
+        if user_action == "Yes"
+            println("Fantastic! What toppings would you like to have?")
+            println("These are your options: ", Toppings)
+
+
+
+
