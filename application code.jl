@@ -23,7 +23,7 @@ while true
 
         println("Which Ice-Cream you want to buy?")
         ice_cream = readline()
-        ice_cream_index = findall(x -> x == "ice_cream", IceCreams)
+        ice_cream_index = findall(x -> x == ice_cream, IceCreams)
         if(length(ice_cream_index)) == 0
             println("Sorry, we don't have that ice_cream")
             continue
@@ -34,7 +34,7 @@ while true
 
         println("What size do you want? (i.e Small/Medium/Large)")
         user_size = readline()
-        user_size_index = findall(x -> x == "user_size", Size)
+        user_size_index = findall(x -> x == user_size, Size)
         if(length(user_size_index)) == 0
             println("Please select appropriate size. (i.e Small/Medium/Large)")
             continue
