@@ -25,11 +25,11 @@ while true
         ice_cream = readline()
         ice_cream_index = findall(x -> x == ice_cream, IceCreams)
         if(length(ice_cream_index)) == 0
-            println("Sorry, we don't have that ice_cream")
+            println("Sorry, we don't have that IceCream")
             continue
 
         else
-            println("You want to buy $(ice_cream) ice_cream.")
+            println("You want to buy $(ice_cream) IceCream.")
         end
 
         println("What size do you want? (i.e Small/Medium/Large)")
@@ -40,7 +40,7 @@ while true
             continue
 
         else
-            println("You want $(user_size).!")
+            println("You want to have a $(user_size) IceCream!")
         end
 
         println("How would you like to have your IceCream in? (Valid options: Cup/Cone/Box)")
@@ -60,18 +60,9 @@ while true
             println("Fantastic! What toppings would you like to have?")
             println("These are your options: ", Toppings)
             user_toppings = readline()
-            user_toppings_index = findall(x -> x == user_toppings, Toppings)
-        elseif(length(user_toppings_index)) == 0
-                println("Sorry, we don't have the toppings")
-                continue
-        elseif println("You want $(user_toppings) on your IceCream.")
 
-            else
-                println("Fine.")
-            end
-        end
-    end
 
+   
             
 
 
