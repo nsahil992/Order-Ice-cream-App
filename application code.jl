@@ -1,13 +1,13 @@
 IceCreams = ["Chocolate", "Strawberry", "Vanilla", "ButterScotch", "Black current", "Choco Chip", "Mango"]
 Size = ["Small", "Medium", "Large"]
-medium = ["Cup", "Cone", "box"]
+medium = ["Cup", "Cone", "Box"]
 Toppings = ["Oreo", "Sprinkles", "Nuts", "Whipped Cream", "Cereals"]
 while true
 
     println("Please enter your name: ")
     user_name = readline()
     println("Hello $(user_name), Welcome to our Ice-Cream ordering Application.")
-    println("What would you want to do? (i.e Buy/Takeaway/Quit)")
+    println("What would you want to do? (i.e Buy/Quit)")
     user_input = readline()
 
     if user_input == "quit"
